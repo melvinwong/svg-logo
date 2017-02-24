@@ -1,0 +1,23 @@
+{
+  "name": "svg-logo",
+  "version": "1.0.0",
+  "description": "SVG experiments with logo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melvinwong/svg-logo.git"
+  },
+  "author": "Melvin Wong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melvinwong/svg-logo/issues"
+  },
+  "homepage": "https://github.com/melvinwong/svg-logo#readme",
+  "dependencies": {
+    "snapsvg": "^0.5.1",
+    "vivus": "^0.4.0"
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		body {
+			background-color: #254094
+		}
+		#page-wrap{
+			width: 80%;
+			margin: auto;
+		}
+		.svg-wrap{
+			display: inline-block;
+			position: relative;
+			width: 100%;
+			padding-bottom: 100%;
+			vertical-align: middle;
+			overflow: hidden;
+		}
+		#logo svg, #Layer_1 {
+			fill-opacity:0;
+			stroke-opacity:1;
+			transition: fill-opacity 1s ease, stroke-opacity 1s ease;
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		#logo svg.finished{
+			fill-opacity: 1;
+			stroke-opacity:0;
+		}
+		</style>
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="page-wrap">
+        <div class="svg-wrap">
+        <object id="logo" type="image/svg+xml" data="logo_animated_mono.svg">
+        	<img src="logo_720x560.png" alt="No SVG support">
+        </object>
+
+
+		</div>
+
+		</div>
+
+
+
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="vivus-master/dist/vivus.min.js"></script>
+		<script type="text/javascript">
+		// var separated = new Vivus("logo", {
+		// 		type: 'sync',
+		// 		duration: 70,
+		// 		forceRender: false,
+		// 		onReady: function(obj) {
+		// 			obj.el.classList.add('vivus-init');
+		// 		}
+		// 	}, function (obj) {
+		//     	obj.el.classList.remove('vivus-init');
+		// 		}
+		// 	);
+
+		function resetSeparated(obj) {
+			obj.classList.add('vivus-init');
+			separated.reset().play();
+		}
+		</script>
+	</body>
+</html>
