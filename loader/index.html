@@ -1,0 +1,195 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Untitled Document</title>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="css/melvin.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="loader" id="page-loader">
+
+	  <div class="loading-wrapper">
+
+
+	  	<div id="loading-logo-wrap">
+	  <style>
+	  #loading-logo-wrap{
+	  	width: 250px;
+	  	height: 195px;
+	  }
+#loading_logo {
+	transition: top 500ms ease, left 500ms ease, width 500ms ease, height 500ms ease;
+	width: 250px;
+	height: 195px;
+
+}
+#page-loader{
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#page-loader .loading-wrapper {
+	position: static;
+	width: 250px;
+	margin:auto;
+}
+.page-loader-title {
+	margin-bottom: 0;
+}
+	  </style>
+<svg version="1.1" id="loading_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" preserveAspectRatio="xMinYMin meet" xml:space="preserve">
+<style type="text/css">
+    path {
+        transition: fill-opacity .5s ease, stroke-opacity .5s ease;
+        stroke-width:6;
+    }
+    .a{
+        fill: #fff;
+        fill-opacity:0;
+    }
+
+    .c,
+    .d {
+        fill: none;
+        stroke-opacity: 1;
+        stroke: #fff;
+    }
+
+    #c1,
+    #c3 {
+        stroke-dasharray: 312, 314;
+        stroke-dashoffset: 313;
+    }
+
+    #c2 {
+        stroke-dasharray: 925, 927;
+        stroke-dashoffset: 926;
+    }
+
+    #c4 {
+        stroke-dasharray: 678, 680;
+        stroke-dashoffset: 679;
+    }
+
+    #d1,
+    #d3 {
+        stroke-dasharray: 1012, 1014;
+        stroke-dashoffset: 1013;
+    }
+
+    #d2 {
+        stroke-dasharray: 214, 216;
+        stroke-dashoffset: 215;
+    }
+</style>
+<path d="M595.56 426.52c1.7 3.38 5.16 5.52 8.94 5.52h82.38c3.46 0 6.67-1.78 8.49-4.72s2.01-6.6 0.48-9.7L628.08 280l-52.51 106.64L595.56 426.52z" class="a"/>
+<path d="M197.9 280L144.43 173.36l71.74-145.68c1.68-3.41 5.15-5.57 8.95-5.58 3.8-0.01 7.28 2.14 8.98 5.54l121.43 243.48c0.85 1.7 2.58 2.77 4.47 2.77s3.63-1.07 4.47-2.77L485.91 27.63c1.7-3.4 5.17-5.55 8.98-5.54 3.8 0.01 7.27 2.17 8.95 5.58l71.74 145.68L522.11 280l-22.78-45.44c-0.84-1.68-2.56-2.75-4.44-2.76 -1.88-0.01-3.61 1.04-4.47 2.72L368.9 471.1c-1.71 3.34-5.15 5.43-8.9 5.43s-7.18-2.1-8.9-5.43L229.59 234.52c-0.86-1.67-2.59-2.72-4.47-2.72 -1.88 0.01-3.6 1.08-4.44 2.76L197.9 280z" class="a"/>
+<path d="M124.44 426.52c-1.7 3.38-5.15 5.52-8.94 5.52H33.12c-3.45 0-6.66-1.78-8.49-4.72 -1.83-2.93-2.01-6.6-0.48-9.7L91.92 280l52.52 106.64L124.44 426.52z" class="a"/>
+
+<path id="c1" d="M144.44 386.64l-19.99 39.88c-1.7 3.38-5.15 5.52-8.94 5.52H33.12c-3.45 0-6.66-1.78-8.49-4.72 -1.83-2.93-2.01-6.6-0.48-9.7L91.92 280" class="c"/>
+<path id="c2" d="M144.43 173.36l71.74-145.68c1.68-3.41 5.15-5.57 8.95-5.58 3.8-0.01 7.28 2.14 8.98 5.54l121.43 243.48c0.85 1.7 2.58 2.77 4.47 2.77s3.63-1.07 4.47-2.77L485.91 27.63c1.7-3.4 5.17-5.55 8.98-5.54 3.8 0.01 7.27 2.17 8.95 5.58l71.74 145.68" class="c"/>
+<path id="c3" d="M575.57 386.64l19.99 39.88c1.7 3.38 5.16 5.52 8.94 5.52h82.38c3.46 0 6.67-1.78 8.49-4.72s2.01-6.6 0.48-9.7L628.08 280" class="c"/>
+<path id="c4" d="M522.11 280l-22.78-45.44c-0.84-1.68-2.56-2.75-4.44-2.76 -1.88-0.01-3.61 1.04-4.47 2.72L368.9 471.1c-1.71 3.34-5.15 5.43-8.9 5.43s-7.18-2.1-8.9-5.43L229.59 234.52c-0.86-1.67-2.59-2.72-4.47-2.72 -1.88 0.01-3.6 1.08-4.44 2.76L197.9 280" class="c"/>
+<path id="d1" d="M412.76 385.7l73.15 146.66c1.7 3.4 5.17 5.55 8.98 5.54 3.8-0.01 7.27-2.17 8.95-5.58l192.03-389.94c1.53-3.1 1.35-6.77-0.48-9.7 -1.82-2.93-5.03-4.72-8.49-4.72h-82.38c-3.78 0-7.24 2.14-8.94 5.52l-19.99 39.88v0L522.11 280v0l-22.78 45.44c-0.84 1.68-2.56 2.75-4.44 2.76 -1.88 0.01-3.61-1.04-4.47-2.72L467.05 280" class="d"/>
+<path id="d2" d="M412.76 174.3l-43.86-85.4c-1.71-3.33-5.15-5.43-8.9-5.43s-7.18 2.1-8.9 5.43l-43.86 85.4" class="d"/>
+<path id="d3" d="M252.95 280l-23.36 45.48c-0.86 1.68-2.59 2.73-4.47 2.72 -1.88-0.01-3.6-1.08-4.44-2.76l-96.23-191.96c-1.7-3.38-5.16-5.52-8.94-5.52H33.12c-3.45 0-6.66 1.78-8.49 4.72s-2.01 6.6-0.48 9.7l192.03 389.95c1.68 3.41 5.15 5.57 8.95 5.58 3.8 0.01 7.28-2.14 8.98-5.54l73.15-146.66" class="d"/>
+</svg>
+
+	  	</div>
+
+	    <!-- Edit With Your Name -->
+	    <div class="page-loader-name">
+	      Melvin Wong
+	    </div>
+	    <!-- /Edit With Your Name -->
+	    <!-- Edit With Your Job -->
+	    <p class="page-loader-title">Web Application Developer</p>
+	    <!-- /Edit With Your Job -->
+	  </div>
+	</div>
+
+	<div id="page">
+		<section id="front" class="front">
+		  <div class="container">
+		    <div class="card   row">
+		      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-3 col-md-offset-2">
+		          <div class="row">
+		              <img id="logo" src="img/logo_color.svg" alt="logo">
+		          </div>
+		      </div>
+		      <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1" id="front_info">
+		        <div class="row">
+		          <h1><strong>Melvin Wong</strong></h1>
+		          <p class="text-muted">Web Application Developer</p>
+		        </div>
+		        <hr/>
+		        <div class="row">
+		          <dl class="dl-horizontal">
+		            <dt>Email</dt><dd><a href="mailto:contact@melvinwong.ca">contact@melvinwong.ca</a></dd>
+		            <dt>Location</dt><dd>Winnipeg, Manitoba</dd>
+		          </dl>
+		        </div>
+		        <div class="row social_icons">
+		          <ul class="list-inline">
+		            <li class="no_paddings">
+		              <a href="https://www.linkedin.com/in/melvin-wong-85254822" target="_blank" class="social_link">
+		                <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+		              </a>
+		            </li>
+		<!--             <li class="no_paddings">
+		              <a href="https://github.com/melvinwong" target="_blank" class="social_link">
+		                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+		              </a>
+		            </li> -->
+		            <li class="no_paddings">
+		              <a href="https://www.instagram.com/melvin.wong_" target="_blank" class="social_link">
+		                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+		              </a>
+		            </li>
+		            <li class="no_paddings">
+		              <a href="https://twitter.com/melvinwong_" target="_blank" class="social_link">
+		                <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+		              </a>
+		            </li>
+		          </ul>
+		        </div>
+
+		      </div>
+		    </div>
+		    <div class="row">
+		      <div id="hello" class="col-xs-10 col-xs-offset-1 intro_text">
+		        <h2 id="hello_header">Hello!_</h2>
+		        <div class="row">
+		          <p>
+		              I am a web application developer from Winnipeg, Manitoba. I enjoy all aspects of web development; from planning and designing databases to making funky little transitions.
+		          </p>
+		          <div class="download_cv_block">
+		            <a href="http://melvinwong.ca/wp-content/uploads/2017/02/Melvin-Wong-Resume-2017.pdf" download class="btn btn-primary">
+		              Download Resume
+		            </a>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</section>
+	</div>
+
+
+  <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="../node_modules/snapsvg/dist/snap.svg-min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
