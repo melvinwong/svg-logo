@@ -12,7 +12,7 @@ gulp.task('browser-sync', function() {
 
     gulp.watch([
       'loader/**/*.html',
-      'loader/**/*.js'
+      'loader/**/*.js',
     ]).on('change', browserSync.reload);
 });
 
