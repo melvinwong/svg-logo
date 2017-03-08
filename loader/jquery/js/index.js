@@ -17,13 +17,12 @@ function whichTransitionEvent(){
 }
 var transitionEvent = whichTransitionEvent();
 
-
-$(document).ready(function(){
+jQuery(document).ready(function(){
   loadingLogo.init();
   loadingLogo.run();
 });
 
-$(window).load(function(){
+jQuery(window).load(function(){
   window.isPageLoaded = true;
 });
 
@@ -32,10 +31,10 @@ var loadingLogo = {
   animationDuration: 500,
   sOffsets: [313, 926, 313, 679, 1013, 215, 1013],
   init: function(){
-    this.$logo = $('#logo');
-    this.$loadingLogo = $('#loading-logo');
-    this.s = $('.s');
-    this.f = $('.f');
+    this.$logo = jQuery('#logo');
+    this.$loadingLogo = jQuery('#loading-logo');
+    this.s = jQuery('.s');
+    this.f = jQuery('.f');
   },
   drawStrokes: function(forward){
     if (forward === true) {
@@ -67,10 +66,10 @@ var loadingLogo = {
   run: function(){
     var _this = this;
     _this.forward();
-    _this.$loadingLogo.one(_this.transitionEvent, function(){
+    _this.$loadingLogo.one(transitionEvent, function(){
       if (window.isPageLoaded) {
         var logoOffsets = _this.$logo.offset();
-        var loadingLogoOffsets = _this.$loadingLogo.offset();
+        var loadingLogoOffsets = jQuery('#loading-logo-wrap').position();
         _this.$loadingLogo.css({
           position:'fixed',
           top:loadingLogoOffsets.top+'px',
@@ -92,22 +91,5 @@ var loadingLogo = {
         setTimeout(function(){_this.run();}, _this.animationDuration*3);
       }
     });
-  },
-  whichTransitionEvent: function(){
-    var t,
-        el = document.createElement("fakeelement");
-    var transitions = {
-      "transition"      : "transitionend",
-      "OTransition"     : "oTransitionEnd",
-      "MozTransition"   : "transitionend",
-      "WebkitTransition": "webkitTransitionEnd"
-    }
-
-    for (t in transitions){
-      if (el.style[t] !== undefined){
-        return transitions[t];
-      }
-    }
-  },
-  transitionEvent: this.whichTransitionEvent()
+  }
 };
